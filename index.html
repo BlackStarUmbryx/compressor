@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image and File Compressor</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Compressor</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="upload-section">
+      <label for="fileInput">Choose Image/File:</label>
+      <input type="file" id="fileInput" accept="image/*,.pdf,.doc,.docx" />
+      <button id="compressBtn">Compress</button>
+    </section>
+  </main>
+
+  <section class="output-section">
+      <canvas id="canvas"></canvas>
+      <a id="downloadLink" style="display:none;">Download Compressed</a>
+    </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
